@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-resp{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* barre de navigation */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 16vh;
+    padding: 0 7%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 22px;
+}
+
+li{
+    font-family: 'Spartan', sans-serif;
+    padding: 10%;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+ul > li:nth-child(1){
+    padding-right: 18%;
+}
+
+.underscore{
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+li:hover .underscore{
+    opacity: 1;
+}
+
+/* Gestion de la première section */
+section{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.container-img{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+h1{
+    padding: 0 0 5% 0;
+    font-size: 35px;
+    color: black;
+    line-height: normal;
+}
+
+.link-shop{    
+    padding: 9% 0 0 0;
+    width: 100%;
+    color: black;
+    z-index: 1000;
+}
+
+.link-shop svg{
+    margin-left: 8%;
+}
+
+a{
+    font-size: 12px;
+    letter-spacing: 12px;
+    cursor: pointer;
+}
+
+.link-shop:hover, 
+.link-shop:hover #fleche{
+    color: hsl(0, 0%, 63%);
+    fill: rgb(175, 175, 175);
+}
+
+.box-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 6.5%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Gestion de la deuxième section */
+.last{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box-img-small{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.container-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 3.5%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.6;
+
+}
+
+h2{
+    font-size: 14px;
+    color: black;
+    letter-spacing: 3px;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+/* Gestion des liens du changement de page */
+.black-boxs{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.black-box1{
+    background-color: black;
+    width: 12.5%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.black-box2{
+    background-color: black;
+    width: 12.5%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.black-box1:hover,
+.black-box2:hover{
+    background-color: rgb(90, 90, 90);
+}
+
+/* Carouselle */
+#carouselle{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 300%;
+    height: 70vh;
+}
+
+.page2{
+    left: -100%;
+}
+
+.page3{
+    left: -200%;
+}
+
+
