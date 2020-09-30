@@ -39,6 +39,9 @@ header{
 #nav_mobile{
     display: none;
 }
+#nav_mobile_open{
+    display: none;
+}
 
 ul{
     display: flex;

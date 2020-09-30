@@ -1,3 +1,9 @@
+@media screen and (min-width: 576px){
+    #nav_mobile{
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 576px){
 
     body{
