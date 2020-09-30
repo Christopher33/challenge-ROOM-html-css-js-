@@ -91,6 +91,24 @@ section{
     position: relative;
 }
 
+/* .section1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section2{
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.section3{
+    position: absolute;
+    top: 0;
+    left: -200%;
+} */
+
 .container-img{
     width: 60%;
     height: 100%;
@@ -234,3 +252,7 @@ h2{
     height: 70vh;
 }
 
+.focus{
+    width: 100%;
+    overflow: hidden;
+}
